@@ -19,7 +19,7 @@ export const useCampaign = (address, signer, account) => {
   });
   const [loading, setLoading] = useState(false);
   const [error, setError, setErrorState] = useState(null);
-  const [allowance, setAllowance] = useState(0n);
+  const [error, setError] = useState(null);
 
   const fetchCampaignData = useCallback(async () => {
     if (!address || !signer || address === "FILL_ME") return;
